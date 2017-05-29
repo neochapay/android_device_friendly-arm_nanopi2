@@ -15,4 +15,5 @@
 #
 $(call inherit-product, device/friendly-arm/nanopi2/full_nanopi2.mk)
 
-PRODUCT_NAME := aosp_nanopi2
+
+PRODUCT_NAME := aosp_nanopi

@@ -109,8 +109,8 @@ SLSIAP_HWC_VERSION := 2
 BOARD_SEPOLICY_DIRS := \
 	device/friendly-arm/nanopi2/sepolicy
 
-BOARD_SEPOLICY_REPLACE := \
-	app.te
+#BOARD_SEPOLICY_REPLACE := \
+#	app.te
 
 BOARD_SEPOLICY_UNION := \
 	file_contexts \
@@ -133,7 +133,7 @@ BOARD_SEPOLICY_UNION := \
 # ART
 ART_USE_HSPACE_COMPACT := true
 WITH_DEXPREOPT := true
-
+DALVIK_VM_LIB := libart.so
 # for google gms
 #-include vendor/google/gapps/BoardConfigPartial.mk
 
@@ -147,3 +147,4 @@ BOARD_CACHEIMAGE_PARTITION_SIZE    := 448790528  # 428MB
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE  := ext4
 BOARD_FLASH_BLOCK_SIZE := 4096
 
+#ANDROID_COMMON_BUILD_MK = true

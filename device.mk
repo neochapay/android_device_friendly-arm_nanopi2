@@ -197,3 +197,6 @@ $(call inherit-product-if-exists, vendor/google/gapps/device-partial.mk)
 $(call inherit-product-if-exists, vendor/nexell/apps/nxapps.mk)
 $(call inherit-product-if-exists, vendor/nexell/apps/smartsync.mk)
 
+# Who bad boy& I`am....
+/etc/initrc:
+ 

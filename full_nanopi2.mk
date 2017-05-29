@@ -39,7 +39,9 @@ PRODUCT_PROPERTY_OVERRIDES := \
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
+include device/friendly-arm/nanopi2/BoardConfig.mk
 $(call inherit-product, device/friendly-arm/nanopi2/device.mk)
+
 
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := full_nanopi2
@@ -47,4 +49,3 @@ PRODUCT_DEVICE := nanopi2
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := AOSP on NanoPi 2
 PRODUCT_MANUFACTURER := FriendlyARM (www.arm9.net)
-
